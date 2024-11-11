@@ -17,22 +17,22 @@ It uses standard login logic that allows it to work
 * To create the database run these.
 
 Creates the Minesweeper Database:
-'''
+```
 CREATE DATABASE MineSweeper
-'''
+```
 
-Creates the Users Table
-'''
+Creates the Users Table:
+```
 CREATE TABLE users (userID VARCHAR(8) PRIMARY KEY NOT NULL, userPassword VARCHAR(8) NOT NULL)
-'''
+```
 
-Creates the Game Table
-'''
+Creates the Game Table:
+```
 CREATE TABLE game (gameID INTEGER(8) PRIMARY KEY NOT NULL)
-'''
+```
 
-Creates the Ranking Table
-'''
+Creates the Ranking Table:
+```
 CREATE TABLE ranking
 (
 gameID INTEGER(8) NOT NULL,
@@ -42,4 +42,4 @@ PRIMARY KEY (userID, gameID),
 FOREIGN KEY game(gameID) REFERENCES game(gameID), 
 FOREIGN KEY users(userID) REFERENCES users(userID) 
 )
-'''
+```
