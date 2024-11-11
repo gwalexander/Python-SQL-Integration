@@ -4,7 +4,7 @@ This is a template for my minesweeper login with the database intergration and t
 
 ## Description
 
-It uses standard login logic that allows it to work 
+It uses standard login logic that allows it to work with unexpected inputs and gives aproprite error mesages when the login rules are not followed.
 
 ## Getting Started
 
